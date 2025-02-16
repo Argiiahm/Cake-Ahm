@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Rubik+Vinyl&display=swap');
+
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", serif;
+}
+
+nav {
+  background-color:#69247C;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  /* height: 20vh; */
+  align-items: center;
+}
+
+
+
+.logo img {
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+.menu-icon {
+  font-size: 30px;
+  display: none;
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+   nav ul {
+    flex-direction: column;
+    width: 100%;
+   }
+   nav ul.hidden {
+    display: none;
+   }
+
+   .hidden img {
+    display: none;
+   }
+
+   .menu-icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   }
+
+   main {
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+
+  .header-gambar img {
+    display: none;
+  }
+
+  .t-kueh {
+    font-size: 24px; /* Perkecil ukuran teks jika layar kecil */
+  }
+
+  .sub-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .medsos {
+    font-size: 24px;
+    gap: 1.5rem;
+  
+  }
+
+  .button-header button {
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+  .explore {
+    justify-content: center;
+  }
+
+  .kotak {
+    flex-direction: column;
+    
+  }
+  * {
+    /* border: 1px solid black; */
+  }
+
+  .gambar-s {
+    display: none;
+  }
+
+
+
+  }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  height: 70vh;
+  color:  rgba(0, 0, 0, 0.836);
+}
+
+.header-gambar img {
+  width: 500px;
+}
+
+.t-kueh {
+  color: orange;
+}
+.sub-title {
+  color: rgba(0, 0, 0, 0.542);
+  margin: 5px;
+}
+.medsos {
+  margin-top: 20px;
+  gap: 2.5rem;
+  display: flex;
+  font-size: 28px;
+}
+.medsos a {
+  text-decoration: none;
+  color: black;
+}
+.medsos a:hover {
+  margin-top: -10px;
+  transition-delay: 100ms;
+  color: orange;
+}
+.button-header {
+  margin-top: 20px;
+}
+.button-header button {
+  width: 220px;
+  border: none;
+  background-color:#69247C;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  height: 8vh;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+.button-header button:hover {
+  background-color:#023f21;
+
+}
+
+.bp {
+  margin: 60px;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 30px;
+}
+
+.explore a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.explore i {
+  font-size: 30px;
+}
+
+.title-best-produk {
+  text-align: center;
+}
+.title-best-produk span {
+  color: orange;
+}
+
+.kotak {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 35px;
+}
+
+.kotak-1 {
+  /* border: 1px solid black; */
+  width: 200px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.437);
+}
+
+.brdr {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: orange;
+  display: flex;
+}
+.brdr i {
+  font-size: 30px;
+  color: white;
+}
+.brdr2 {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: green;
+  display: flex;
+}
+.brdr2 i {
+  font-size: 30px;
+  color: white;
+}
+.brdr3 {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: violet;
+  display: flex;
+}
+.brdr3 i {
+  font-size: 30px;
+  color: white;
+}
+.brdr4 {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: blueviolet;
+  display: flex;
+}
+.brdr4 i {
+  font-size: 30px;
+  color: white;
+}
+.brdr3 {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: violet;
+  display: flex;
+}
+.brdr3 i {
+  font-size: 30px;
+  color: white;
+}
+.brdr5 {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 0px;
+  background: red;
+  display: flex;
+}
+.brdr5 i {
+  font-size: 30px;
+  color: white;
+}
+
+.kotak-1 img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.isi1 {
+  padding: 20px;
+  row-gap: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.isi1 p {
+  /* font-weight: bold; */
+  color: rgba(0, 0, 0, 0.569);
+}
+
+.knp {
+  display: flex;
+  /* align-items: center; */
+  gap: 10rem;
+  padding: 40px;
+  background: #FEF9F2;
+  height: 80vh;
+  font-family: "Poppins", serif;
+  font-size: 13.8px;
+
+}
+
+.title-knpa span {
+  color: orange;
+}
+
+.gambar-s {
+  padding-right: 120px;
+}
+.gambar-s img {
+  width: 400px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 12px;
+
+}
+.list i {
+  font-size: 40px;
+  color: orange;
+  /* border-radius: 50%; */
+}
+
+.list span {
+  color: rgba(0, 0, 0, 0.636);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+
+
